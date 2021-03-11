@@ -20,9 +20,9 @@ for _ in range(1000000):
 print(unsort_a[:10])
 
 start = time.time()
-unsort_a = quick_sort(a=unsort_a)
-unsort_a = sorted(unsort_a)  # five times faster
+sort_a = quick_sort(a=unsort_a)
+# sort_a = sorted(unsort_a)  # five times faster
 finish = time.time()
 
-print(unsort_a[:10])
+print(sort_a[:10])
 print(finish - start)
