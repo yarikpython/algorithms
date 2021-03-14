@@ -12,11 +12,7 @@ def quick_sort(a: list):
     return a
 
 
-unsort_a = []
-
-for _ in range(1000000):
-    unsort_a.append(random.randint(-10000, 10000))
-
+unsort_a = [random.randint(-10000, 10000) for _ in range(1000000)]
 print(unsort_a[:10])
 
 start = time.time()
